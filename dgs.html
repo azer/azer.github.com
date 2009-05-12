@@ -17,16 +17,32 @@ var calculate = function(){
   soz_coef = Number(document.getElementById('sozel_katsayi').value),
   aobp_coef = Number(document.getElementById('aobp_katsayi').value);
 
-  res_el.value = (sayisal_net*say_coef)+(sozel_net*soz_coef)+(aobp_point*aobp_coef);
+  res_el.value = base+(sayisal_net*say_coef)+(sozel_net*soz_coef)+(aobp_point*aobp_coef);
 }
 
 var apply_coefficient = function(){
   var section = parseInt(document.getElementById('section').value),
   say_coef_el = document.getElementById('sayisal_katsayi'),
-  soz_coef_el = document.getElementById('sozel_katsayi');
-  say_coef_el.value = section==0?3:(section==2?1.8:0.6);
-  soz_coef_el.value = section==1?3:(section==2?1.8:0.6);
+  soz_coef_el = document.getElementById('sozel_katsayi'),
+  base_el = document.getElementById('base'),
+  say_coef = 0, soz_coef = 0, base = 0;
+  
+  switch(section){
+    case 0:
+      say_coef = 1.421, soz_coef = 0.294, base = 117.370;
+      break;
+    case 1:
+      say_coef = 0.322, soz_coef = 1.605, base = 100.879;
+      break;
+    case 2:
+      say_coef = 0.828, soz_coef = 0.895, base = 115.320;
+      break;
+  }
+  say_coef_el.value = say_coef;
+  soz_coef_el.value = soz_coef;
+  base_el.value = base;
 }
+    window.onload = apply_coefficient;
     </script>
   </head>
   <body>
@@ -37,15 +53,16 @@ var apply_coefficient = function(){
       <label>AOBP:</label><input type='text' id='aobp'><br />
       <label>Alan:</label>
       <select onchange='apply_coefficient()' id='section'>
-        <option value='0'>Sayisal</option>
+        <option value='0' selected>Sayisal</option>
         <option value='1'>Sozel</option>
         <option value='2'>Esit Agirlik</option>
       </select>
       <hr />
-      <label>Sayisal Katsayi:</label><input type='text' value='3' id='sayisal_katsayi'><br />
-      <label>Sozel Katsayi:</label><input type='text' value='0.6' id='sozel_katsayi'><br />
+      <label>Sayisal Katsayi:</label><input type='text' value='' id='sayisal_katsayi'><br />
+      <label>Sozel Katsayi:</label><input type='text' value='' id='sozel_katsayi'><br />
       <label>AOBP Katsayi:</label><input type='text' value='0.6' id='aobp_katsayi'><br />
-      <label>Taban Puan:</label><input type='text' value='0' id='base'><br />
+      <label>Taban Puan:</label><input type='text' value='' id='base'><br />
+      <hr />
       <button onclick='calculate()'>Hesapla</button>
       <hr />
       <label>Puan:</label><input type='text' id='res' disabled><br />
