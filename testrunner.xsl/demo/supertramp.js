@@ -1,0 +1,1 @@
+window.SUPERTRAMP = new Object();
