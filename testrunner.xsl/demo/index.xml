@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../testrunner.xsl"?>
 <testcases>
+  <case display='true' firebug='true'>
+    <file src="layout.js" /> 
+  </case>
   <case>
     <file src="math.js" /> 
   </case>
