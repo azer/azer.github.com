@@ -4,7 +4,7 @@
  <title>Azer's Technical Shares</title>
  <link href="http://azer.kodfabrik.com/atom.xml" rel="self"/>
  <link href="http://azer.kodfabrik.com"/>
- <updated>2010-02-25T21:59:59+02:00</updated>
+ <updated>2010-02-25T22:06:23+02:00</updated>
  <id>http://azer.kodfabrik.com</id>
  <author>
    <name>Azer Koculu</name>
@@ -14,7 +14,7 @@
  
  <entry>
    <title>what up?</title>
-   <link href="http://azer.github.com/_new_//jekyll/what/2010/02/20/what-up.html"/>
+   <link href="http://azer.github.com/new//jekyll/what/2010/02/20/what-up.html"/>
    <updated>2010-02-20T00:00:00+02:00</updated>
    <id>/jekyll/what/2010/02/20/what-up</id>
    <content type="html">&lt;p&gt;What up?!&lt;/p&gt;
@@ -23,7 +23,7 @@
  
  <entry>
    <title>hello world</title>
-   <link href="http://azer.github.com/_new_//foo/hello/jekyll/2010/01/27/hello-world.html"/>
+   <link href="http://azer.github.com/new//foo/hello/jekyll/2010/01/27/hello-world.html"/>
    <updated>2010-01-27T00:00:00+02:00</updated>
    <id>/foo/hello/jekyll/2010/01/27/hello-world</id>
    <content type="html">&lt;p&gt;supertramp.. was here&lt;/p&gt;
@@ -32,7 +32,7 @@
  
  <entry>
    <title>First Post</title>
-   <link href="http://azer.github.com/_new_//blog/foo/jekyll/ruby/2010/01/27/first-post.html"/>
+   <link href="http://azer.github.com/new//blog/foo/jekyll/ruby/2010/01/27/first-post.html"/>
    <updated>2010-01-27T00:00:00+02:00</updated>
    <id>/blog/foo/jekyll/ruby/2010/01/27/first-post</id>
    <content type="html">&lt;h1&gt;A person's identity is determined at birth&lt;/h1&gt;
