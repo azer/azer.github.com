@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Azer's Technical Shares</title>
+ <link href="http://azer.kodfabrik.com/atom.xml" rel="self"/>
+ <link href="http://azer.kodfabrik.com"/>
+ <updated>2010-03-10T22:05:43+02:00</updated>
+ <id>http://azer.kodfabrik.com</id>
+ <author>
+   <name>Azer Koculu</name>
+   <email>azerkoculu@gmail.com</email>
+ </author>
+ 
+ 
+ <entry>
+   <title>Hello World</title>
+   <link href="http://azer.kodfabrik.com//announcement/helloworld/personal/2010/03/10/hello-world.html"/>
+   <updated>Liquid error: undefined method `xmlschema' for "03-10-2010":String</updated>
+   <id>/announcement/helloworld/personal/2010/03/10/hello-world</id>
+   <content type="html">&lt;p&gt;This is my new blog including nothing except some information about me, for now. I'll write about
+programming topics I'm interested and some projects I've been working on, especially
+&lt;a href=&quot;http://github.com/azer/pud&quot;&gt;Pud Web Framework&lt;/a&gt; lacking documentation. Thank you for visiting my website.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>
