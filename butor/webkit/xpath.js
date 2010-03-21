@@ -25,10 +25,10 @@ var evaluateXPath = function(aNode, aExpr){
 }
 
 /**
- * TEST:
+ * TEST
  * Webkit returns document node when the context passed to XPathEvaluator object is an element without a parent node.
  */
-var test_rootnode = function()
+var test_rootnode_sel = function()
 {
   /**
    *          <table>
@@ -45,4 +45,4 @@ var test_rootnode = function()
   assert( evaluateXPath(table,'/')[0] == table, 'Trying to get table element.' ); // fails for webkit
 }
 
-test_rootnode();
+test_rootnode_sel();
