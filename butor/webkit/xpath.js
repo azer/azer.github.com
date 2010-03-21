@@ -1,8 +1,6 @@
 var disp = function()
 {
-  document.documentElement.appendChild(
-    document.createTextNode( Array.prototype.join.call( arguments, ', ') )
-  );
+  document.documentElement.innerHTML+=Array.prototype.join.call( arguments, ', ')+'<br>';
 }
 
 var assert = function(exp,msg)
@@ -26,23 +24,28 @@ var evaluateXPath = function(aNode, aExpr){
 
 /**
  * TEST
- * Webkit returns document node when the context passed to XPathEvaluator object is an element without a parent node.
+ * Webkit returns document node when the context passed to XPathEvaluator object is an element.
  */
 var test_rootnode_sel = function()
 {
   /**
-   *          <table>
-   *          /     \
-   *        <tr>    <tr>
+   *          <fieldset>
+   *          /        \
+   *       <form>   <legend>
    *         |  
-   *        <td>
+   *       <input>
    */
-  var table = window.table = document.createElement('table');
-  var rows = [ document.createElement('tr'), document.createElement('tr') ]; 
-  rows[0].appendChild( document.createElement('td') );
+  var fset = window.fset = document.createElement('fieldset');
+  fset.appendChild( document.createElement('legend') );
+  var form = document.createElement('form');
+  form.appendChild( document.createElement('input') );
+  fset.appendChild( form );
 
-  // try to get table by evaluating xpath
-  assert( evaluateXPath(table,'/')[0] == table, 'Trying to get table element.' ); // fails for webkit
+  // get fieldset
+  assert( evaluateXPath(fset,'/')[0] == fset, 'Trying to get fieldset element.' ); // fails for webkit
+  assert( evaluateXPath(fset,'/form')[0] == form, 'Tring to get form element' );
+
+
 }
 
 test_rootnode_sel();
