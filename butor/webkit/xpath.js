@@ -41,11 +41,16 @@ var test_rootnode_sel = function()
   form.appendChild( document.createElement('input') );
   fset.appendChild( form );
 
+  var doc = document.implementation.createDocument("http://www.w3.org/1999/xhtml", "html", null);
+  doc.documentElement.appendChild(fset);
+
   // get fieldset
-  assert( evaluateXPath(fset,'/')[0] == fset, 'Trying to get fieldset element.' ); // fails for webkit
-  assert( evaluateXPath(fset,'/form')[0] == form, 'Tring to get form element' );
+  assert( evaluateXPath(doc,'/')[0] == fset, 'Trying to get fieldset element.' ); // fails for webkit
+  assert( evaluateXPath(doc,'/form')[0] == form, 'Tring to get form element' );
+  
+  document.documentElement.appendChild( fset );
 
-
+  //assert( evaluateXPath(,'/')[0] == fset, '' );
 }
 
 test_rootnode_sel();

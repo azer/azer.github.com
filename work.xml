@@ -29,21 +29,21 @@
     <title>pyChessEngine</title>
     <link href="http://pychessengine.googlecode.com" />
     <updated>2009-01-01</updated>
-    <summary>Validation library for chess moves coded in Python</summary>
+    <summary>An event-driven chess engine.Coded in Python</summary>
   </entry>
 
   <entry>
     <title>GarantiFox</title>
     <link href="http://garantifox.github.com" />
     <updated>2009-08-26</updated>
-    <summary>An extension for Mozilla Firefox that provides tracking the bank accounts to users of GarantiBank</summary>
+    <summary>An Mozilla Firefox extension providing tracking bank accounts to users of GarantiBank</summary>
   </entry>
 
   <entry>
     <title>FFUZBL</title>
     <link href="http://addons.mozilla.org/en-US/firefox/addon/13537" />
     <updated>2009-08-08</updated>
-    <summary>A Mozilla Firefox extension to emulate layout of the UZBL browser.</summary>
+    <summary>A Mozilla Firefox extension emulating layout of the UZBL browser.</summary>
   </entry>
 
   <entry>

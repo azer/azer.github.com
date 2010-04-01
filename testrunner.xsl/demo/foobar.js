@@ -1,1 +1,0 @@
-window.FOOBAR = new Object();
