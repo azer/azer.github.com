@@ -4,7 +4,7 @@
  <title>Azer's Technical Shares</title>
  <link href="http://azer.kodfabrik.com/atom.xml" rel="self"/>
  <link href="http://azer.kodfabrik.com"/>
- <updated>2010-04-02T02:49:11+03:00</updated>
+ <updated>2010-04-02T03:36:54+03:00</updated>
  <id>http://azer.kodfabrik.com</id>
  <author>
    <name>Azer Koculu</name>
@@ -14,7 +14,7 @@
  
  <entry>
    <title>Hello World</title>
-   <link href="http://azer.github.com//2010/03/10/hello-world.html"/>
+   <link href="http://azer.kodfabrik.com//2010/03/10/hello-world.html"/>
    <updated>10-03-2010</updated>
    <id>/2010/03/10/hello-world</id>
    <content type="html">&lt;p&gt;This is my new blog including nothing except some information about me, for now. I'll write about
